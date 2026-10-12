@@ -1,2 +1,43 @@
-.venv
-.vscode
+# Python environments, caches, and packaging
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local credentials (keep a safe example template trackable)
+.env
+.env.*
+!.env.example
+
+# Harness runtime state: checkpoints, audit logs, and run output
+/.tether/
+/logs/
+*.log
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+
+# Agent workspaces are separate from the harness source repository
+/workspace/
+
+# JavaScript dependencies and generated output
+node_modules/
+.next/
+coverage/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
