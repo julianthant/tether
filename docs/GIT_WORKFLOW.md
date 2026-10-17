@@ -7,6 +7,10 @@ useful, why it is needed now, and whether it changes files or history, then
 interpret the actual result with the user. The user can run commands for practice
 without being required to copy terminal output back to the assistant.
 
+The user runs `git push` personally. Explain the command before they run it and
+inspect the result afterward. The assistant may push only when explicitly asked
+to perform that specific push.
+
 ## The first mental model
 
 Git is local version control. GitHub hosts a remote copy and the pull-request
