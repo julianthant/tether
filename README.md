@@ -9,9 +9,17 @@ of tools, and durable execution state. If the harness is killed mid-run, it
 should resume from its saved state and continue the task. Its actions should be
 inspectable through an audit log.
 
-**Status:** project setup. Milestone 1 is in progress; the command runner, MCP
-server, agent graph, and checkpointing are not implemented yet. The architecture
-below describes the intended design.
+**Status:** guided learning project, starting implementation from scratch. The
+source and test folders contain empty placeholders. Dependencies and project
+documentation are set up; milestone 1 is not implemented. The architecture below
+describes the intended design.
+
+Start with the [learning guide](docs/LEARNING_GUIDE.md) and
+[environment setup notes](docs/SETUP.md). The user writes the application and
+tests; the assistant provides guidance and supplies code only when asked.
+The [editor guide](docs/EDITOR.md) describes Python and Vim setup, and the
+[Git workflow](docs/GIT_WORKFLOW.md) covers learning to collaborate through
+branches and pull requests while working across Windows and macOS.
 
 ## What this project explores
 
@@ -58,8 +66,10 @@ names will be configurable.
 ## Planned stack and layout
 
 Python 3.11, LangGraph, LangChain, `langchain-mcp-adapters`, FastMCP from the `mcp`
-package, `langchain-xai` with `ChatXAI`, LangGraph's `SqliteSaver`, and `unittest`.
-Dependencies will be installed with `pip`.
+package, SQLite checkpoints, and `unittest`. Provider integrations are installed
+for exploration; the model provider and authentication route are not selected.
+No developer API keys are assumed. Dependencies use `pip` and are listed in
+`requirements.txt` and `requirements-dev.txt`.
 
 | Module | Responsibility |
 | --- | --- |

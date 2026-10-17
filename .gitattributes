@@ -1,0 +1,6 @@
+# Consistent text files across Windows and macOS.
+* text=auto eol=lf
+
+# Use CRLF for Windows command scripts.
+*.bat text eol=crlf
+*.cmd text eol=crlf
