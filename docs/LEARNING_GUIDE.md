@@ -27,6 +27,9 @@ the user's behalf would defeat the learning goal.
   The user can run commands for practice and handles actions requiring their
   own authentication or interaction. Command execution does not authorize
   generating application code or making unrelated changes.
+- The user runs `git push` personally. Explain the command and why it is needed,
+  then inspect the result after the user runs it. Push on the user's behalf only
+  when explicitly asked to perform that specific push.
 - A specific setup or documentation request authorizes that work. It does not
   change the default learning mode or authorize application implementation.
 - Do not interpret "let's build" or "what next?" as a request to generate code.
